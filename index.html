@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -27,26 +27,15 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
 
-    <!-- Theme toggle: inline so it runs before paint, no-flash guarantee -->
-    <script>
-        (function () {
-            var saved = localStorage.getItem('tradeliv-theme') || 'dark';
-            document.documentElement.setAttribute('data-theme', saved);
-        })();
-    </script>
 </head>
 
 <body>
 
     <nav class="navbar" id="navbar">
         <div class="container">
-            <a href="#" class="logo">Trade<span>Liv</span></a>
+            <a href="#" class="logo">trade<span>Liv</span></a>
             <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle theme"
-                    onclick="var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);document.getElementById('themeIcon').textContent=n==='light'?'🌙':'☀️';localStorage.setItem('tradeliv-theme',n)">
-                    <span id="themeIcon">☀️</span>
-                </button>
-                <a href="#early-access" class="nav-cta">Get Early Access</a>
+                <a href="#waiting-list" class="nav-cta">Join Waiting List</a>
             </div>
         </div>
     </nav>
@@ -67,13 +56,13 @@
 
                 <p class="hero-description reveal reveal-delay-2">
                     The B2B sourcing platform where interior designers compare furniture across multiple brands,
-                    shortlist with clients, and place a single bulk order — split into brand-specific purchase orders
+                    shortlist with clients, and place a single bulk order split into brand specific purchase orders
                     automatically.
                 </p>
 
                 <div class="hero-cta-group reveal reveal-delay-3">
-                    <a href="#early-access" class="btn btn-primary">
-                        Join Early Access
+                    <a href="#waiting-list" class="btn btn-primary">
+                        Join Waiting List
                         <span class="btn-icon">→</span>
                     </a>
                     <a href="#how-it-works" class="btn btn-secondary">
@@ -105,7 +94,7 @@
                     <div class="step-number"><span>1</span></div>
                     <div class="step-icon">🔍</div>
                     <h3>Compare Across Brands</h3>
-                    <p>Browse and compare furniture from multiple brands side by side — dimensions, finishes, lead
+                    <p>Browse and compare furniture from multiple brands side by side dimensions, finishes, lead
                         times, and pricing all in one view.</p>
                 </div>
 
@@ -121,7 +110,7 @@
                     <div class="step-number"><span>3</span></div>
                     <div class="step-icon">📦</div>
                     <h3>One Order, Multiple Brands</h3>
-                    <p>Place a single bulk order. TradeLiv automatically splits it into brand-specific purchase orders —
+                    <p>Place a single bulk order. TradeLiv automatically splits it into brand specific purchase orders
                         you manage one, we handle the rest.</p>
                 </div>
             </div>
@@ -136,7 +125,7 @@
                 <h2 class="section-title">Built for the Design Industry</h2>
                 <p class="section-subtitle">
                     Whether you're an interior designer managing projects or a furniture brand looking for B2B
-                    distribution — TradeLiv is your platform.
+                    distribution TradeLiv is your platform.
                 </p>
             </div>
 
@@ -151,7 +140,7 @@
                     <ul class="audience-perks">
                         <li><span class="check">✓</span> Cross-brand comparison in project context</li>
                         <li><span class="check">✓</span> Room-level briefs with dimensions &amp; budgets</li>
-                        <li><span class="check">✓</span> Trade discounts — default or negotiated, whichever is greater
+                        <li><span class="check">✓</span> Trade discounts default or negotiated, whichever is greater
                         </li>
                         <li><span class="check">✓</span> Client collaboration with private notes</li>
                         <li><span class="check">✓</span> Single order, automatic multi-brand PO splitting</li>
@@ -167,10 +156,10 @@
                     </p>
                     <ul class="audience-perks">
                         <li><span class="check">✓</span> Exposure to a curated designer network</li>
-                        <li><span class="check">✓</span> Structured purchase orders, not ad-hoc inquiries</li>
+                        <li><span class="check">✓</span> Structured purchase orders, not ad hoc inquiries</li>
                         <li><span class="check">✓</span> Trade discount management</li>
                         <li><span class="check">✓</span> Brand portal for fulfillment tracking (coming soon)</li>
-                        <li><span class="check">✓</span> Catalog self-service (coming soon)</li>
+                        <li><span class="check">✓</span> Catalog self service (coming soon)</li>
                     </ul>
                 </div>
             </div>
@@ -192,7 +181,7 @@
                 <div class="feature-card reveal reveal-delay-1">
                     <div class="feature-icon">⚖️</div>
                     <h3>Cross-Brand Comparison</h3>
-                    <p>Pin products and compare side by side across brands — MRP, dimensions, materials, finishes, and
+                    <p>Pin products and compare side by side across brands MRP, dimensions, materials, finishes, and
                         lead times at a glance.</p>
                 </div>
 
@@ -206,20 +195,20 @@
                 <div class="feature-card reveal reveal-delay-3">
                     <div class="feature-icon">💰</div>
                     <h3>Smart Trade Discounts</h3>
-                    <p>Automatic discount resolution — the platform applies whichever is greater: the brand's default
+                    <p>Automatic discount resolution the platform applies whichever is greater: the brand's default
                         trade discount or your negotiated rate.</p>
                 </div>
 
                 <div class="feature-card reveal reveal-delay-4">
                     <div class="feature-icon">📑</div>
                     <h3>Automated PO Splitting</h3>
-                    <p>Submit one order for an entire project. TradeLiv generates separate, brand-specific purchase
+                    <p>Submit one order for an entire project. TradeLiv generates separate, brand specific purchase
                         orders behind the scenes.</p>
                 </div>
 
                 <div class="feature-card reveal reveal-delay-1">
                     <div class="feature-icon">🤝</div>
-                    <h3>Designer-Client Collaboration</h3>
+                    <h3>Designer Client Collaboration</h3>
                     <p>Share shortlists with clients, capture their feedback, and keep separate private notes. Full
                         visibility control built in.</p>
                 </div>
@@ -235,13 +224,13 @@
     </section>
 
     <!-- ==================== LEAD FORM ==================== -->
-    <section class="lead-section section" id="early-access">
+    <section class="lead-section section" id="waiting-list">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-label">Early Access</span>
+                <span class="section-label">Waiting List</span>
                 <h2 class="section-title">Be Among the First</h2>
                 <p class="section-subtitle">
-                    We're onboarding a select group of designers and brands for our early access program. Leave your
+                    We're onboarding a select group of designers and brands for our waiting list. Leave your
                     details and we'll reach out.
                 </p>
             </div>
@@ -289,12 +278,12 @@
 
                         <!-- Submit -->
                         <button type="submit" class="btn-submit" id="submitBtn">
-                            <span class="btn-text">Request Early Access</span>
+                            <span class="btn-text">Join Waiting List</span>
                             <span class="spinner"></span>
                         </button>
 
                         <p class="form-footer">
-                            By submitting, you agree to hear from us about TradeLiv updates.
+                            By submitting, you agree to hear from us about tradeLiv updates.
                         </p>
                     </form>
                 </div>

@@ -1,5 +1,5 @@
 // ===================================================
-// TradeLiv — Lead Collection Landing Page
+// tradeLiv — Lead Collection Landing Page
 // Form Validation, Submission & UI Interactions
 // ===================================================
 
