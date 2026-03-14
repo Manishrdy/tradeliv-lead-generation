@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8" />
@@ -26,16 +26,24 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Theme toggle: inline so it runs before paint, no-flash guarantee -->
+    <script>
+        (function () {
+            var saved = localStorage.getItem('tradeliv-theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', saved);
+        })();
+    </script>
 </head>
 
 <body>
 
-    <!-- ==================== NAVIGATION ==================== -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="#" class="logo">Trade<span>Liv</span></a>
             <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle theme"
+                    onclick="var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);document.getElementById('themeIcon').textContent=n==='light'?'🌙':'☀️';localStorage.setItem('tradeliv-theme',n)">
                     <span id="themeIcon">☀️</span>
                 </button>
                 <a href="#early-access" class="nav-cta">Get Early Access</a>
@@ -303,7 +311,11 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- Config (gitignored — holds Supabase keys) -->
+    <script src="config.js"></script>
+    <!-- Supabase JS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <!-- App -->
     <script src="script.js"></script>
 </body>
 

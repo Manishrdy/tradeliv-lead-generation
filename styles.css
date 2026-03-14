@@ -213,13 +213,14 @@ img {
 }
 
 /* ---------- Scroll Reveal ---------- */
-.reveal {
+/* Only hide reveal elements when JS is running — prevents blank page on script failure */
+body.js-loaded .reveal {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s var(--ease-smooth), transform 0.8s var(--ease-smooth);
 }
 
-.reveal.visible {
+body.js-loaded .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -940,6 +941,12 @@ img {
   background: rgba(248, 113, 113, 0.15);
   border: 1px solid rgba(248, 113, 113, 0.3);
   color: var(--error);
+}
+
+.toast-info {
+  background: rgba(200, 168, 78, 0.12);
+  border: 1px solid rgba(200, 168, 78, 0.3);
+  color: var(--gold-500);
 }
 
 /* ===================================================
