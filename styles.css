@@ -94,6 +94,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: -webkit-fill-available;
 }
 
 body {
@@ -102,6 +103,7 @@ body {
   color: var(--text-primary);
   line-height: 1.7;
   overflow-x: hidden;
+  min-height: -webkit-fill-available;
 }
 
 a {
@@ -259,6 +261,7 @@ body.js-loaded .reveal.visible {
    =================================================== */
 .hero {
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   display: flex;
   align-items: center;
   position: relative;
