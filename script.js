@@ -17,7 +17,7 @@ try {
 // Script is at bottom of <body> — DOM is already ready, no DOMContentLoaded needed
 
 // ---------- Navbar scroll effect ----------
-const navbar = document.querySelector('.navbar');
+const navbar = document.querySelector('.lp-nav');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 50);
 });

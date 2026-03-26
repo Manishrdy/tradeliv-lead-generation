@@ -21,284 +21,438 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
-
 </head>
 
 <body>
+    <div class="lp-root">
 
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <a href="#" class="logo">trade<span>Liv</span></a>
-            <div class="nav-actions">
-                <a href="#waiting-list" class="nav-cta">Join Waiting List</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- ==================== HERO ==================== -->
-    <section class="hero section" id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge reveal">
-                    <span class="dot"></span>
-                    Now accepting waiting list signups
+        <!-- ══════ Navigation ══════ -->
+        <nav class="lp-nav" id="navbar">
+            <div class="lp-nav-inner">
+                <div class="lp-logo">
+                    <span class="lp-logo-mark">T</span>
+                    <span class="lp-logo-text">tradeLiv</span>
                 </div>
-
-                <h1 class="hero-title reveal reveal-delay-1">
-                    Source Smarter.<br />
-                    <span class="gold">Order Once.</span>
-                </h1>
-
-                <p class="hero-description reveal reveal-delay-2">
-                    The B2B sourcing platform where interior designers compare furniture across multiple brands,
-                    shortlist with clients, and place a single bulk order split into brand specific purchase orders
-                    automatically.
-                </p>
-
-                <div class="hero-cta-group reveal reveal-delay-3">
-                    <a href="#waiting-list" class="btn btn-primary">
-                        Join Waiting List
-                        <span class="btn-icon">→</span>
+                <div class="lp-nav-links">
+                    <a href="#waiting-list" class="btn-ghost" style="padding: 8px 16px; font-size: 13px;">
+                        Join Waitlist for Beta
                     </a>
-                    <a href="#how-it-works" class="btn btn-secondary">
+                    <a href="#how-it-works" class="btn-primary" style="padding: 8px 18px; font-size: 13px;">
                         See How It Works
-                        <span class="btn-icon">↓</span>
                     </a>
                 </div>
             </div>
-        </div>
+        </nav>
 
-        <div class="scroll-indicator">
-            <span class="line"></span>
-        </div>
-    </section>
-
-    <!-- ==================== HOW IT WORKS ==================== -->
-    <section class="how-it-works section" id="how-it-works">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">How It Works</span>
-                <h2 class="section-title">Three Steps to Streamlined Sourcing</h2>
-                <p class="section-subtitle">
-                    From discovery to delivery, TradeLiv simplifies every step of your furniture procurement workflow.
-                </p>
-            </div>
-
-            <div class="steps-grid">
-                <div class="step-card reveal reveal-delay-1">
-                    <div class="step-number"><span>1</span></div>
-                    <div class="step-icon">🔍</div>
-                    <h3>Compare Across Brands</h3>
-                    <p>Browse and compare furniture from multiple brands side by side dimensions, finishes, lead
-                        times, and pricing all in one view.</p>
-                </div>
-
-                <div class="step-card reveal reveal-delay-2">
-                    <div class="step-number"><span>2</span></div>
-                    <div class="step-icon">📋</div>
-                    <h3>Shortlist with Clients</h3>
-                    <p>Pin your favorites, add private designer notes, and share a curated selection with your client
-                        for collaborative approval.</p>
-                </div>
-
-                <div class="step-card reveal reveal-delay-3">
-                    <div class="step-number"><span>3</span></div>
-                    <div class="step-icon">📦</div>
-                    <h3>One Order, Multiple Brands</h3>
-                    <p>Place a single bulk order. TradeLiv automatically splits it into brand specific purchase orders
-                        you manage one, we handle the rest.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== WHO IT'S FOR ==================== -->
-    <section class="section" id="who-its-for">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">Who It's For</span>
-                <h2 class="section-title">Built for the Design Industry</h2>
-                <p class="section-subtitle">
-                    Whether you're an interior designer managing projects or a furniture brand looking for B2B
-                    distribution TradeLiv is your platform.
-                </p>
-            </div>
-
-            <div class="audience-grid">
-                <div class="audience-card reveal reveal-delay-1">
-                    <div class="audience-icon">🎨</div>
-                    <h3>Interior Designers</h3>
-                    <p>
-                        Stop juggling spreadsheets and brand websites. Source, compare, and order furniture for your
-                        projects from a single dashboard.
+        <!-- ══════ Hero ══════ -->
+        <section class="lp-hero" id="hero">
+            <div class="lp-hero-inner">
+                <div class="lp-hero-text">
+                    <div class="lp-hero-badge reveal">For Interior Designers</div>
+                    <h1 class="lp-hero-h1 reveal reveal-delay-1">
+                        Source furniture across brands.
+                        <br />
+                        <span style="color: #b8860b;">One platform, one order.</span>
+                    </h1>
+                    <p class="lp-hero-sub reveal reveal-delay-2">
+                        Compare products from any brand, collaborate with clients in real-time, and place consolidated orders — all from a single dashboard.
                     </p>
-                    <ul class="audience-perks">
-                        <li><span class="check">✓</span> Cross-brand comparison in project context</li>
-                        <li><span class="check">✓</span> Room-level briefs with dimensions &amp; budgets</li>
-                        <li><span class="check">✓</span> Trade discounts default or negotiated, whichever is greater
-                        </li>
-                        <li><span class="check">✓</span> Client collaboration with private notes</li>
-                        <li><span class="check">✓</span> Single order, automatic multi-brand PO splitting</li>
-                    </ul>
+                    <div class="lp-hero-ctas reveal reveal-delay-3">
+                        <a href="#waiting-list" class="btn-primary" style="padding: 12px 28px; font-size: 15px;">
+                            Join the Waitlist <!-- ArrowRight icon -->
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                        <a href="#how-it-works" class="btn-ghost" style="padding: 12px 24px; font-size: 15px;">
+                            See How It Works
+                        </a>
+                    </div>
                 </div>
 
-                <div class="audience-card reveal reveal-delay-2">
-                    <div class="audience-icon">🏭</div>
-                    <h3>Furniture Brands</h3>
-                    <p>
-                        Get your products in front of verified interior designers without building a B2B sales channel
-                        from scratch.
-                    </p>
-                    <ul class="audience-perks">
-                        <li><span class="check">✓</span> Exposure to a curated designer network</li>
-                        <li><span class="check">✓</span> Structured purchase orders, not ad hoc inquiries</li>
-                        <li><span class="check">✓</span> Trade discount management</li>
-                        <li><span class="check">✓</span> Brand portal for fulfillment tracking (coming soon)</li>
-                        <li><span class="check">✓</span> Catalog self service (coming soon)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== FEATURES ==================== -->
-    <section class="features section" id="features">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">Platform Features</span>
-                <h2 class="section-title">Everything You Need to Source Furniture</h2>
-                <p class="section-subtitle">
-                    Purpose-built tools for the cross-brand furniture sourcing workflow.
-                </p>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card reveal reveal-delay-1">
-                    <div class="feature-icon">⚖️</div>
-                    <h3>Cross-Brand Comparison</h3>
-                    <p>Pin products and compare side by side across brands MRP, dimensions, materials, finishes, and
-                        lead times at a glance.</p>
-                </div>
-
-                <div class="feature-card reveal reveal-delay-2">
-                    <div class="feature-icon">🏗️</div>
-                    <h3>Project &amp; Room Management</h3>
-                    <p>Organize procurement by client, project, and room. Set budgets, dimensions, style preferences,
-                        and category needs per room.</p>
-                </div>
-
-                <div class="feature-card reveal reveal-delay-3">
-                    <div class="feature-icon">💰</div>
-                    <h3>Smart Trade Discounts</h3>
-                    <p>Automatic discount resolution the platform applies whichever is greater: the brand's default
-                        trade discount or your negotiated rate.</p>
-                </div>
-
-                <div class="feature-card reveal reveal-delay-4">
-                    <div class="feature-icon">📑</div>
-                    <h3>Automated PO Splitting</h3>
-                    <p>Submit one order for an entire project. TradeLiv generates separate, brand specific purchase
-                        orders behind the scenes.</p>
-                </div>
-
-                <div class="feature-card reveal reveal-delay-1">
-                    <div class="feature-icon">🤝</div>
-                    <h3>Designer Client Collaboration</h3>
-                    <p>Share shortlists with clients, capture their feedback, and keep separate private notes. Full
-                        visibility control built in.</p>
-                </div>
-
-                <div class="feature-card reveal reveal-delay-2">
-                    <div class="feature-icon">🔄</div>
-                    <h3>Intelligent Catalog</h3>
-                    <p>Product data is automatically extracted and normalized from brand websites. The global catalog
-                        grows with every designer's sourcing activity.</p>
+                <div class="lp-hero-visual reveal reveal-delay-2">
+                    <div class="lp-hero-visual-label">Cross-Brand Comparison</div>
+                    <div class="lp-hero-cards">
+                        <div class="lp-product-card" style="animation-delay: 0s;">
+                            <div class="lp-product-img">
+                                <img src="landing/sofa-1.jpg" alt="Arden Sofa Set" style="width:100%;height:100%;object-fit:cover;">
+                            </div>
+                            <div style="padding: 14px 16px 16px;">
+                                <div style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 2px;">Crate & Barrel</div>
+                                <div style="font-size: 14px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px;">Arden Sofa Set</div>
+                                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                                    <span style="font-size: 16px; font-weight: 700; color: var(--text-primary);">$12,450</span>
+                                    <span style="font-size: 11px; color: var(--text-muted);">84 × 36 × 32 in</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lp-product-card" style="animation-delay: 0.15s;">
+                            <div class="lp-product-img">
+                                <img src="landing/sofa-2.jpg" alt="Oslo Lounge Sofa" style="width:100%;height:100%;object-fit:cover;">
+                            </div>
+                            <div style="padding: 14px 16px 16px;">
+                                <div style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 2px;">West Elm</div>
+                                <div style="font-size: 14px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px;">Oslo Lounge Sofa</div>
+                                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                                    <span style="font-size: 16px; font-weight: 700; color: var(--text-primary);">$9,800</span>
+                                    <span style="font-size: 11px; color: var(--text-muted);">78 × 34 × 30 in</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lp-hero-pin-badge">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="#b8860b" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        Pinned for comparison
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==================== LEAD FORM ==================== -->
-    <section class="lead-section section" id="waiting-list">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">Waiting List</span>
-                <h2 class="section-title">Be Among the First</h2>
-                <p class="section-subtitle">
-                    We're onboarding a select group of designers and brands for our waiting list. Leave your
-                    details and we'll reach out.
-                </p>
+        <!-- ══════ Problem → Solution ══════ -->
+        <section class="lp-section" id="features">
+            <div class="lp-container">
+                <div class="lp-section-header reveal">
+                    <h2 class="lp-section-title">Stop juggling spreadsheets and WhatsApp</h2>
+                    <p class="lp-section-sub">Three workflows that change how you source furniture.</p>
+                </div>
+                <div class="lp-solutions-grid">
+                    <div class="lp-solution-card reveal reveal-delay-1">
+                        <div class="lp-solution-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        </div>
+                        <h3 class="lp-solution-title">AI-Powered Extraction</h3>
+                        <p class="lp-solution-before">Before: Browse 10 brand websites, copy-paste product details into spreadsheets</p>
+                        <div class="lp-solution-divider"></div>
+                        <p class="lp-solution-after">Paste any furniture URL — our AI instantly extracts every product with prices, dimensions, materials, and images into structured data.</p>
+                    </div>
+                    <div class="lp-solution-card reveal reveal-delay-2">
+                        <div class="lp-solution-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="18" rx="1.5"/><rect x="14" y="3" width="7" height="18" rx="1.5"/></svg>
+                        </div>
+                        <h3 class="lp-solution-title">Cross-Brand Comparison</h3>
+                        <p class="lp-solution-before">Before: Open tabs side by side, screenshot products, email comparisons to clients</p>
+                        <div class="lp-solution-divider"></div>
+                        <p class="lp-solution-after">Pin a product and compare it against alternatives from any brand — dimensions, finishes, lead times, and trade pricing side by side.</p>
+                    </div>
+                    <div class="lp-solution-card reveal reveal-delay-3">
+                        <div class="lp-solution-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 9.4l-9-5.19M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                        <h3 class="lp-solution-title">One Order, Every Brand</h3>
+                        <p class="lp-solution-before">Before: Place separate orders with each brand, track 5 different shipments manually</p>
+                        <div class="lp-solution-divider"></div>
+                        <p class="lp-solution-after">Submit one consolidated order. We automatically split it into brand-specific purchase orders and track every delivery for you.</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="lead-wrapper reveal reveal-delay-1">
-                <div class="lead-form-card">
-                    <!-- User Type Selector -->
-                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px; font-weight: 500;">
-                        I am a…</p>
-                    <div class="user-type-selector">
-                        <button type="button" class="type-option" data-type="designer" id="typeDesigner">
-                            <span class="type-icon">🎨</span>
-                            Interior Designer
-                        </button>
-                        <button type="button" class="type-option" data-type="brand" id="typeBrand">
-                            <span class="type-icon">🏭</span>
-                            Furniture Brand
-                        </button>
+        <!-- ══════ Product Walkthrough ══════ -->
+        <section class="lp-section lp-section-alt" id="how-it-works">
+            <div class="lp-container">
+                <div class="lp-section-header reveal">
+                    <h2 class="lp-section-title">How tradeLiv works</h2>
+                    <p class="lp-section-sub">From URL to purchase order in four steps.</p>
+                </div>
+
+                <div class="lp-steps">
+                    <!-- Step 1 -->
+                    <div class="lp-step reveal">
+                        <div class="lp-step-num">01</div>
+                        <div class="lp-step-content">
+                            <h3 class="lp-step-title">Paste a URL. Get every product.</h3>
+                            <p class="lp-step-desc">
+                                Drop any furniture brand URL into tradeLiv. Our AI reads the page, extracts every product listing, and structures it — name, price, dimensions, material, images — ready for comparison.
+                            </p>
+                            <div class="lp-step-mock">
+                                <div class="lp-mock-url-bar">
+                                    <!-- Link icon -->
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+                                    <span style="color: var(--text-muted); font-size: 13px;">https://crateandbarrel.com/furniture/sofas</span>
+                                    <span class="lp-mock-extract-btn">Extract</span>
+                                </div>
+                                <div class="lp-mock-grid">
+                                    <div class="lp-mock-product-line">
+                                        <img class="lp-mock-thumb" src="landing/thumb-sofa.jpg" alt="Sofa" />
+                                        <div>
+                                            <div style="font-size: 13px; font-weight: 600;">Arden 3-Seater Sofa</div>
+                                            <div style="font-size: 12px; color: var(--text-muted);">$12,450 · Oak + Linen · 84×36×32 in</div>
+                                        </div>
+                                    </div>
+                                    <div class="lp-mock-product-line">
+                                        <img class="lp-mock-thumb" src="landing/thumb-chair.jpg" alt="Chair" />
+                                        <div>
+                                            <div style="font-size: 13px; font-weight: 600;">Nara Accent Chair</div>
+                                            <div style="font-size: 12px; color: var(--text-muted);">$4,200 · Walnut + Velvet · 28×30×33 in</div>
+                                        </div>
+                                    </div>
+                                    <div class="lp-mock-product-line">
+                                        <img class="lp-mock-thumb" src="landing/thumb-table.jpg" alt="Coffee Table" />
+                                        <div>
+                                            <div style="font-size: 13px; font-weight: 600;">Elara Coffee Table</div>
+                                            <div style="font-size: 12px; color: var(--text-muted);">$3,890 · Marble + Brass · 48×24×16 in</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <form id="leadForm" novalidate>
-                        <!-- Name -->
-                        <div class="form-group">
-                            <label for="leadName">Business / Individual Name <span class="required">*</span></label>
-                            <input type="text" id="leadName" class="form-input"
-                                placeholder="e.g. Studio Azure or Sarah Miller" autocomplete="organization" required />
-                            <div class="form-error" id="nameError"></div>
+                    <!-- Step 2 -->
+                    <div class="lp-step reveal">
+                        <div class="lp-step-num">02</div>
+                        <div class="lp-step-content">
+                            <h3 class="lp-step-title">Compare across brands. Pin your pick.</h3>
+                            <p class="lp-step-desc">
+                                Pin a product as your reference, then pull in alternatives from other brands. Compare dimensions, finishes, lead times, and trade pricing — all in one view. No more tab-switching.
+                            </p>
+                            <div class="lp-step-mock">
+                                <div class="lp-mock-compare">
+                                    <div class="lp-mock-compare-col lp-mock-compare-pinned">
+                                        <div class="lp-mock-compare-badge">Pinned</div>
+                                        <img class="lp-mock-compare-img" src="landing/sofa-1.jpg" alt="Arden Sofa" />
+                                        <div style="font-weight: 600; font-size: 13px;">Arden 3-Seater</div>
+                                        <div style="font-size: 12px; color: var(--text-muted);">Crate & Barrel</div>
+                                        <div style="font-weight: 700; margin-top: 4px;">$12,450</div>
+                                        <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">84×36×32 in · 6-8 wks</div>
+                                    </div>
+                                    <div class="lp-mock-compare-vs">VS</div>
+                                    <div class="lp-mock-compare-col">
+                                        <img class="lp-mock-compare-img" src="landing/sofa-2.jpg" alt="Oslo Sofa" />
+                                        <div style="font-weight: 600; font-size: 13px;">Oslo Lounge</div>
+                                        <div style="font-size: 12px; color: var(--text-muted);">West Elm</div>
+                                        <div style="font-weight: 700; margin-top: 4px;">$9,800</div>
+                                        <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">78×34×30 in · 4-5 wks</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
 
-                        <!-- Email -->
-                        <div class="form-group">
-                            <label for="leadEmail">Email Address <span class="required">*</span></label>
-                            <input type="email" id="leadEmail" class="form-input" placeholder="you@yourstudio.com"
-                                autocomplete="email" required />
-                            <div class="form-error" id="emailError"></div>
+                    <!-- Step 3 -->
+                    <div class="lp-step reveal">
+                        <div class="lp-step-num">03</div>
+                        <div class="lp-step-content">
+                            <h3 class="lp-step-title">Share with your client. Get approvals inline.</h3>
+                            <p class="lp-step-desc">
+                                Send a portal link — no login required. Your client sees the shortlisted products, approves or rejects items, and leaves notes. Your private design notes stay hidden.
+                            </p>
+                            <div class="lp-step-mock">
+                                <div class="lp-mock-portal">
+                                    <div class="lp-mock-portal-header">
+                                        <!-- Users icon -->
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                                        <span style="font-size: 13px; font-weight: 600;">Client Portal — Living Room</span>
+                                    </div>
+                                    <div class="lp-mock-portal-item">
+                                        <img class="lp-mock-thumb" src="landing/thumb-sofa.jpg" alt="Sofa" />
+                                        <div style="flex: 1;">
+                                            <div style="font-size: 13px; font-weight: 600;">Arden 3-Seater Sofa</div>
+                                            <div style="font-size: 12px; color: var(--text-muted);">$12,450 · Oak + Linen</div>
+                                        </div>
+                                        <span class="lp-mock-approve-btn">Approved</span>
+                                    </div>
+                                    <div class="lp-mock-portal-item">
+                                        <img class="lp-mock-thumb" src="landing/thumb-chair.jpg" alt="Chair" />
+                                        <div style="flex: 1;">
+                                            <div style="font-size: 13px; font-weight: 600;">Nara Accent Chair</div>
+                                            <div style="font-size: 12px; color: var(--text-muted);">$4,200 · Walnut + Velvet</div>
+                                        </div>
+                                        <span class="lp-mock-pending-btn">Pending</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
 
-                        <!-- Phone -->
-                        <div class="form-group">
-                            <label for="leadPhone">Phone Number <span class="required">*</span></label>
-                            <input type="tel" id="leadPhone" class="form-input" placeholder="+1 (555) 123-4567"
-                                autocomplete="tel" required />
-                            <div class="form-error" id="phoneError"></div>
+                    <!-- Step 4 -->
+                    <div class="lp-step reveal">
+                        <div class="lp-step-num">04</div>
+                        <div class="lp-step-content">
+                            <h3 class="lp-step-title">One order. We split it by brand.</h3>
+                            <p class="lp-step-desc">
+                                Add approved items to your cart and check out once. tradeLiv automatically generates separate purchase orders for each brand and tracks fulfillment — you see one unified order.
+                            </p>
+                            <div class="lp-step-mock">
+                                <div class="lp-mock-order">
+                                    <div class="lp-mock-order-header">
+                                        <span style="font-size: 13px; font-weight: 700;">Order #FNL-2024-001</span>
+                                        <span class="lp-mock-status-badge">Paid</span>
+                                    </div>
+                                    <div class="lp-mock-po">
+                                        <div class="lp-mock-po-brand">Crate & Barrel</div>
+                                        <div style="font-size: 12px; color: var(--text-muted);">2 items · $16,340</div>
+                                        <span class="lp-mock-po-status">In Production</span>
+                                    </div>
+                                    <div class="lp-mock-po">
+                                        <div class="lp-mock-po-brand">West Elm</div>
+                                        <div style="font-size: 12px; color: var(--text-muted);">1 item · $9,800</div>
+                                        <span class="lp-mock-po-status">Dispatched</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <!-- Submit -->
-                        <button type="submit" class="btn-submit" id="submitBtn">
-                            <span class="btn-text">Join Waiting List</span>
-                            <span class="spinner"></span>
-                        </button>
-
-                        <p class="form-footer">
-                            By submitting, you agree to hear from us about tradeLiv updates.
-                        </p>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-logo">trade<span>Liv</span></div>
-            <p>Cross-brand furniture sourcing, simplified.</p>
-            <p style="margin-top: 8px;">© 2026 tradeLiv. All rights reserved.</p>
-        </div>
-    </footer>
+        <!-- ══════ Built for Designers ══════ -->
+        <section class="lp-section lp-section-dark">
+            <div class="lp-container">
+                <div class="lp-dark-inner reveal">
+                    <h2 class="lp-dark-title">
+                        Built for designers who are
+                        <br />
+                        <span style="color: #d4a843;">done with spreadsheets.</span>
+                    </h2>
+                    <div class="lp-dark-features">
+                        <div class="lp-dark-feature">
+                            <!-- Shield icon -->
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            <div>
+                                <div style="font-weight: 600; margin-bottom: 4px;">Your notes stay private</div>
+                                <div style="font-size: 13px; color: rgba(255,255,255,0.55);">Designer notes are never visible to clients. Internal reasoning, fit assessments, and priority rankings are for your eyes only.</div>
+                            </div>
+                        </div>
+                        <div class="lp-dark-feature">
+                            <!-- Users icon -->
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                            <div>
+                                <div style="font-weight: 600; margin-bottom: 4px;">No login for your clients</div>
+                                <div style="font-size: 13px; color: rgba(255,255,255,0.55);">Clients access their portal via a simple link — no signup, no passwords. They see products, approve items, and chat with you instantly.</div>
+                            </div>
+                        </div>
+                        <div class="lp-dark-feature">
+                            <!-- Link icon -->
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+                            <div>
+                                <div style="font-weight: 600; margin-bottom: 4px;">Trade discounts, auto-applied</div>
+                                <div style="font-size: 13px; color: rgba(255,255,255,0.55);">Negotiated rates take priority over defaults. The best price wins automatically — no manual calculations.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════ Final CTA ══════ -->
+        <section class="lp-section lp-section-cta">
+            <div class="lp-container" style="text-align: center;">
+                <h2 class="lp-cta-title reveal">Your next project deserves better sourcing.</h2>
+                <p class="lp-cta-sub reveal reveal-delay-1">Stop wasting hours on spreadsheets. Start comparing, shortlisting, and ordering — all in one place.</p>
+                <div class="lp-cta-actions reveal reveal-delay-2">
+                    <a href="#waiting-list" class="btn-primary" style="padding: 14px 36px; font-size: 16px;">
+                        Join the Beta — It&apos;s Free <!-- ArrowRight -->
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+                <div class="lp-cta-checklist reveal reveal-delay-3">
+                    <span class="lp-cta-check">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        No credit card required
+                    </span>
+                    <span class="lp-cta-check">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Free during beta
+                    </span>
+                    <span class="lp-cta-check">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Set up in 2 minutes
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════ Lead Form (preserved as-is) ══════ -->
+        <section class="lead-section lp-section" id="waiting-list">
+            <div class="lp-container">
+                <div class="lp-section-header reveal">
+                    <span class="lp-section-label">Waiting List</span>
+                    <h2 class="lp-section-title">Be Among the First</h2>
+                    <p class="lp-section-sub">
+                        We're onboarding a select group of designers and brands for our waiting list. Leave your details and we'll reach out.
+                    </p>
+                </div>
+
+                <div class="lead-wrapper reveal reveal-delay-1">
+                    <div class="lead-form-card">
+                        <!-- User Type Selector -->
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px; font-weight: 500;">
+                            I am a…</p>
+                        <div class="user-type-selector">
+                            <button type="button" class="type-option" data-type="designer" id="typeDesigner">
+                                <span class="type-icon">🎨</span>
+                                Interior Designer
+                            </button>
+                            <button type="button" class="type-option" data-type="brand" id="typeBrand">
+                                <span class="type-icon">🏭</span>
+                                Furniture Brand
+                            </button>
+                        </div>
+
+                        <form id="leadForm" novalidate>
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="leadName">Business / Individual Name <span class="required">*</span></label>
+                                <input type="text" id="leadName" class="form-input"
+                                    placeholder="e.g. Studio Azure or Sarah Miller" autocomplete="organization" required />
+                                <div class="form-error" id="nameError"></div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="leadEmail">Email Address <span class="required">*</span></label>
+                                <input type="email" id="leadEmail" class="form-input" placeholder="you@yourstudio.com"
+                                    autocomplete="email" required />
+                                <div class="form-error" id="emailError"></div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="form-group">
+                                <label for="leadPhone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="leadPhone" class="form-input" placeholder="+1 (555) 123-4567"
+                                    autocomplete="tel" required />
+                                <div class="form-error" id="phoneError"></div>
+                            </div>
+
+                            <!-- Submit -->
+                            <button type="submit" class="btn-submit" id="submitBtn">
+                                <span class="btn-text">Join Waitlist for Beta</span>
+                                <span class="spinner"></span>
+                            </button>
+
+                            <p class="form-footer">
+                                By submitting, you agree to hear from us about tradeLiv updates.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════ Footer ══════ -->
+        <footer class="lp-footer">
+            <div class="lp-footer-inner">
+                <div class="lp-footer-brand">
+                    <span class="lp-logo-mark" style="width: 28px; height: 28px; font-size: 13px;">T</span>
+                    <span style="font-weight: 600; font-size: 14px;">tradeLiv</span>
+                </div>
+                <div class="lp-footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#waiting-list">Join Waitlist for Beta</a>
+                </div>
+                <div class="lp-footer-copy">
+                    &copy; 2026 tradeLiv. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- /lp-root -->
 
     <!-- Config (gitignored — holds Supabase keys) -->
     <script src="config.js"></script>
